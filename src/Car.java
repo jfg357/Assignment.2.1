@@ -7,4 +7,8 @@ public class Car extends Vehicle{
       int i) {
     super();
   }
+
+  public Car() {
+    super();
+  }
 }
