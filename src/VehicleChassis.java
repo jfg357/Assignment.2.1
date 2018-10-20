@@ -16,7 +16,7 @@ public class VehicleChassis implements Chassis {
   public static String chassisName;
 
   public VehicleChassis(){
-    chassisName = chassis;
+    setChassisType(chassis);
   }
   public VehicleChassis(String chassisName){
     setChassisType(chassisName);
@@ -34,7 +34,6 @@ public class VehicleChassis implements Chassis {
 
   @Override
   public String toString() {
-//    return super.toString();
     return "Chassis Name    : " + VehicleChassis.chassisName;
   }
 }
