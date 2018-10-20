@@ -2,6 +2,9 @@ import java.util.*;
 
 public class Vehicle implements Engine, Chassis{
 
+  public Vehicle(Date date, String honda, String prelude, String coupe, VehicleChassis unibody, String aNull, String type, ManufacturedEngine manufacturedEngine) {
+  }
+
   @Override
   public Chassis getChassisType() {
     return null;
