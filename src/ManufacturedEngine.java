@@ -2,7 +2,31 @@ import java.util.*;
 
 public class ManufacturedEngine implements Engine{
 
-  public ManufacturedEngine(String honda, Date date, String s, String h23A1, String s1, int i, String s2) {
+  private static String engineManufacturer;
+  private static Date engineManufacturedDate;
+  private static String engineMake;
+  private static String engineModel;
+  private static String engineType;
+  private static int engineCylinders;
+  private static String driveTrain;
+
+  public ManufacturedEngine(){
+      String engineManufacturer = "";
+      Date engineManufacturedDate = new Date();
+      String engineMake = "";
+      String engineModel = "";
+      String engineType = "";
+      int engineCylinders = 0;
+      String driveTrain = "";
+  }
+  public ManufacturedEngine(
+      String engineManufacturer,
+      Date engineManufacturedDate,
+      String engineMake,
+      String engineModel,
+      String engineType,
+      int engineCylinders,
+      String driveTrain) {
   }
 
   @Override

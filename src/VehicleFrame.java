@@ -1,6 +1,6 @@
 public class VehicleFrame implements Chassis {
 
-  public static String vehicleFrameType;
+  private String vehicleFrameType;
 
   public VehicleFrame(){
     setChassisType("Unibody");
@@ -12,7 +12,7 @@ public class VehicleFrame implements Chassis {
 
   @Override
   public Chassis getChassisType()  {
-    return new VehicleChassis();
+    return this;
   }
 
   @Override
@@ -21,17 +21,17 @@ public class VehicleFrame implements Chassis {
   }
 
   public void setVehicleFrameType(String vehicleFrameType) {
-    VehicleFrame.vehicleFrameType = vehicleFrameType;
+    this.vehicleFrameType = vehicleFrameType;
   }
 
   @Override
   public String toString() {
-    if (VehicleFrame.vehicleFrameType.equals("Unibody")){
+    if (this.vehicleFrameType.equals("Unibody")){
       return "Chassis           : " + VehicleFrame.chassis +
-          "\nVehicle Frame     : " + VehicleFrame.vehicleFrameType;
+          "\nVehicle Frame     : " + this.vehicleFrameType;
     }
     else {
-      return "Vehicle Frame     : " + VehicleFrame.vehicleFrameType;
+      return "Vehicle Frame     : " + this.vehicleFrameType;
     }
   }
 }
