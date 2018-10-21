@@ -7,7 +7,7 @@ public class Main {
     testVehicleChassis();
     testVehicleFrame();
     testManufacturedEngine();
-//    testFeatures();
+    testFeatures();
 //    testVehicle();
 //    testCar();
   }
@@ -44,21 +44,21 @@ public class Main {
             , "88 AKI");
     System.out.println(me2);
   }
-//
-//  public static void testFeatures() {
-//    InteriorFeature if1 = new InteriorFeature();
-//    System.out.println(if1);
-//
-//    InteriorFeature if2 = new InteriorFeature("Climate Control");
-//    System.out.println(if2);
-//
-//    ExteriorFeature ef1 = new ExteriorFeature();
-//    System.out.println(ef1);
-//
-//    ExteriorFeature ef2 = new ExteriorFeature("Fog Lamps");
-//    System.out.println(ef2);
-//
-//  }
+
+  public static void testFeatures() {
+    InteriorFeature if1 = new InteriorFeature();
+    System.out.println(if1);
+
+    InteriorFeature if2 = new InteriorFeature("Climate Control");
+    System.out.println(if2);
+
+    ExteriorFeature ef1 = new ExteriorFeature();
+    System.out.println(ef1);
+
+    ExteriorFeature ef2 = new ExteriorFeature("Fog Lamps");
+    System.out.println(ef2);
+
+  }
 //
 //  public static void testVehicle() {
 //    Vehicle v1 = new Vehicle();
