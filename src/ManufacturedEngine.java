@@ -94,10 +94,10 @@ public class ManufacturedEngine implements Engine{
   public String toString() {
     return "Engine Manufacturer : " + engineManufacturer + "\n"
         + "Engine Manufactured : " + engineManufacturedDate + "\n"
-        + "Engine Make         : " + engineMake + "\n"
-        + "Engine Model        : " + engineModel + "\n"
-        + "Engine Type         : " + engineType + "\n"
-        + "Engine Cylinders    : " + engineCylinders + "\n"
-        + "Drive Train         : " + driveTrain;
+        + "Engine Make : " + engineMake + "\n"
+        + "Engine Model : " + engineModel + "\n"
+        + "Engine Type : " + engineType + "\n"
+        + "Engine Cylinders : " + engineCylinders + "\n"
+        + "Drive Train : " + driveTrain;
   }
 }

@@ -27,11 +27,11 @@ public class VehicleFrame implements Chassis {
   @Override
   public String toString() {
     if (this.vehicleFrameType.equals("Unibody")){
-      return "Chassis           : " + VehicleFrame.chassis +
-          "\nVehicle Frame     : " + this.vehicleFrameType;
+      return "Chassis : " + VehicleFrame.chassis +
+          "\nVehicle Frame : " + this.vehicleFrameType;
     }
     else {
-      return "Vehicle Frame     : " + this.vehicleFrameType;
+      return "Vehicle Frame : " + this.vehicleFrameType;
     }
   }
 }
