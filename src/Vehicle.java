@@ -12,11 +12,11 @@ public class Vehicle implements Engine, Chassis{
   Engine vehicleEngine;
 
   public Vehicle(){
-    setEngineManufacturedDate(new Date());
-    setEngineManufacturer("Generic");
-    setEngineMake("Generic");
-    setEngineModel("Generic");
-    setEngineType("None");
+    this.vehicleManufacturedDate = new Date();
+    this.vehicleManufacturer = "Generic";
+    this.vehicleMake = "Generic";
+    this.vehicleModel = "Generic";
+    this.vehicleType = "None";
     this.vehicleFrame = new VehicleFrame();
     this.vehicleEngine = new ManufacturedEngine();
     this.vehicleEngine.setEngineType("88 AKI");
@@ -31,14 +31,10 @@ public class Vehicle implements Engine, Chassis{
       Chassis vehicleFrame,
       String vehicleType,
       String driveTrain,
-      Engine vehicleEngine) {
+      Engine engine) {
 
-    setEngineManufacturedDate(vehicleManufacturedDate);
-    setEngineManufacturer(vehicleManufacturer);
-    setEngineMake(vehicleMake);
-    setEngineModel(vehicleModel);
-    this.vehicleFrame = vehicleFrame;
-    this.vehicleEngine = vehicleEngine;
+    this.vehicleManufacturer = vehicleManufacturer; this.vehicleManufacturedDate = vehicleManufacturedDate; this.vehicleMake = vehicleMake; this.vehicleModel = vehicleModel; this.vehicleFrame = vehicleFrame;
+    this.vehicleEngine = engine;
 
   }
 

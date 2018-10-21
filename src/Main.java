@@ -8,7 +8,7 @@ public class Main {
     testVehicleFrame();
     testManufacturedEngine();
     testFeatures();
-//    testVehicle();
+    testVehicle();
 //    testCar();
   }
 
@@ -59,39 +59,39 @@ public class Main {
     System.out.println(ef2);
 
   }
-//
-//  public static void testVehicle() {
-//    Vehicle v1 = new Vehicle();
-//    System.out.println(v1);
-//
-//    Vehicle v2 = new Vehicle(new Date(), "Honda", "Prelude", "Coupe",
-//        new VehicleChassis("Unibody"),
-//        "null", "type",
-//        new ManufacturedEngine("Honda", new Date(), "H-series",
-//            "H23A1", "88 AKI", 4, "2WD: Two-Wheel Drive"));
-//    System.out.println(v2);
-//  }
-//
-//  public static void testCar() {
-//
-//    // Test default constructor and print instance attributes.
-//    Car c1 = new Car();
-//    System.out.println(c1);
-//    System.out.println();
-//
-//    // Seed the features with valid subclasses.
-//    Feature[] f = {new InteriorFeature("AM/FM Radio")
-//        , new ExteriorFeature("Wood Panels")
-//        , new InteriorFeature("Air Conditioning")
-//        , new ExteriorFeature("Moonroof")};
-//
-//    // Create an overloaded Car instance.
-//    Car c2 = new Car(new Date(), "Honda", "Prelude", "Coupe",
-//        new VehicleChassis("Unibody"),
-//        "null", "type",
-//        new ManufacturedEngine("Honda", new Date(), "H-series",
-//            "H23A1", "88 AKI", 4, "2WD: Two-Wheel Drive")
-//        , f, 2);
-//    System.out.println(c2);
-//  }
+
+  public static void testVehicle() {
+    Vehicle v1 = new Vehicle();
+    System.out.println(v1);
+
+    Vehicle v2 = new Vehicle(new Date(), "Honda", "Prelude", "Coupe",
+        new VehicleChassis("Unibody"),
+        "null", "type",
+        new ManufacturedEngine("Honda", new Date(), "H-series",
+            "H23A1", "88 AKI", 4, "2WD: Two-Wheel Drive"));
+    System.out.println(v2);
+  }
+
+  public static void testCar() {
+
+    // Test default constructor and print instance attributes.
+    Car c1 = new Car();
+    System.out.println(c1);
+    System.out.println();
+
+    // Seed the features with valid subclasses.
+    Feature[] f = {new InteriorFeature("AM/FM Radio")
+        , new ExteriorFeature("Wood Panels")
+        , new InteriorFeature("Air Conditioning")
+        , new ExteriorFeature("Moonroof")};
+
+    // Create an overloaded Car instance.
+    Car c2 = new Car(new Date(), "Honda", "Prelude", "Coupe",
+        new VehicleChassis("Unibody"),
+        "null", "type",
+        new ManufacturedEngine("Honda", new Date(), "H-series",
+            "H23A1", "88 AKI", 4, "2WD: Two-Wheel Drive")
+        , f, 2);
+    System.out.println(c2);
+  }
 }
