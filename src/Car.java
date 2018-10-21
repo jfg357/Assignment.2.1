@@ -35,45 +35,38 @@ public final class Car extends Vehicle {
   }
 
   public String getExteriorFeatures() {
-    String list = "";
+    String exlist = "";
     for (int i = 0; i < this.feature.length; i++) {
       if (this.feature[i] instanceof ExteriorFeature) {
-        if (list.length() == 0) {
-          list += this.feature[i];
+        if (exlist.length() == 0) {
+          exlist += this.feature[i];
         } else {
-          list += "\n" + this.feature[i];
+          exlist += "\n" + this.feature[i];
         }
       }
     }
-    return list;
+    return exlist;
   }
 
 
   public String getInteriorFeatures() {
-    String list = "";
+    String inlist = "";
     for (int i = 0; i < this.feature.length; i++) {
       if (this.feature[i] instanceof InteriorFeature) {
-        if (list.length() == 0) {
-          list += this.feature[i];
+        if (inlist.length() == 0) {
+          inlist += this.feature[i];
         } else {
-          list += "\n" + this.feature[i];
+          inlist += "\n" + this.feature[i];
         }
       }
     }
-    return list;
+    return inlist;
   }
 
   public String toString() {
-    String list = "";
-    for (int i = 0; i < this.feature.length; i++) {
-      if (list.length() == 0) {
-        list += this.feature[i];
-      }
-      else {
-        list += "\n" + this.feature[i];
-      }
-    }
-    return super.toString() + "\n" + "Features : " + "\n" + list + "\n"
+    return super.toString() + "\n" + "Features : " + "\n"
+        + getInteriorFeatures() + "\n"
+        + getExteriorFeatures() + "\n"
         + "Car Axle : " + carAxle;
   }
 }
