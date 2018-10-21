@@ -16,11 +16,11 @@ public class Vehicle implements Engine, Chassis{
     this.vehicleManufacturer = "Generic";
     this.vehicleMake = "Generic";
     this.vehicleModel = "Generic";
-    this.vehicleType = "None";
+    this.vehicleType = "Generic";
     this.vehicleFrame = new VehicleFrame();
     this.vehicleEngine = new ManufacturedEngine();
-    this.vehicleEngine.setEngineType("88 AKI");
-    this.vehicleEngine.setDriveTrain("2WD: Two-Wheel Drive");
+    this.vehicleEngine.setEngineType("Generic");
+    this.vehicleEngine.setDriveTrain("Generic");
   }
 
   public Vehicle(
@@ -33,7 +33,11 @@ public class Vehicle implements Engine, Chassis{
       String driveTrain,
       Engine engine) {
 
-    this.vehicleManufacturer = vehicleManufacturer; this.vehicleManufacturedDate = vehicleManufacturedDate; this.vehicleMake = vehicleMake; this.vehicleModel = vehicleModel; this.vehicleFrame = vehicleFrame;
+    this.vehicleManufacturer = vehicleManufacturer;
+    this.vehicleManufacturedDate = vehicleManufacturedDate;
+    this.vehicleMake = vehicleMake;
+    this.vehicleModel = vehicleModel;
+    this.vehicleFrame = vehicleFrame;
     this.vehicleEngine = engine;
 
   }

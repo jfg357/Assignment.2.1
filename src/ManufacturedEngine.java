@@ -24,9 +24,9 @@ public class ManufacturedEngine implements Engine{
     setEngineManufacturedDate(new Date());
     setEngineMake("Generic");
     setEngineModel("Generic");
-    setEngineType("85 AKI");
+    setEngineType("Generic");
     setEngineCylinders(0);
-    setDriveTrain("2WD: Two-Wheel Drive");
+    setDriveTrain("Generic");
 
   }
   public ManufacturedEngine(
@@ -34,9 +34,9 @@ public class ManufacturedEngine implements Engine{
       Date engineManufacturedDate,
       String engineMake,
       String engineModel,
-      String driveTrain,
+      String engineType,
       int engineCylinders,
-      String engineType) {
+      String driveTrain) {
 
 //    this.engineManufacturer = engineManufacturer;
 //    this.engineManufacturedDate = engineManufacturedDate;

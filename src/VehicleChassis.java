@@ -35,6 +35,6 @@ public class VehicleChassis implements Chassis {
 
   @Override
   public String toString() {
-    return "Chassis Name    : " + this.chassisName;
+    return "Chassis Name : " + this.chassisName;
   }
 }
