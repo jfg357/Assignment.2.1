@@ -9,7 +9,7 @@ public class Main {
     testManufacturedEngine();
     testFeatures();
     testVehicle();
-//    testCar();
+    testCar();
   }
 
   public static void testVehicleChassis() {
