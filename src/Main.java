@@ -6,7 +6,7 @@ public class Main {
 
     testVehicleChassis();
     testVehicleFrame();
-//    testManufacturedEngine();
+    testManufacturedEngine();
 //    testFeatures();
 //    testVehicle();
 //    testCar();
@@ -33,17 +33,17 @@ public class Main {
     System.out.println(vf2);
   }
 
-//  public static void testManufacturedEngine() {
-//    ManufacturedEngine me1 = new ManufacturedEngine();
-//    System.out.println(me1);
-//
-//    ManufacturedEngine me2 =
-//        new ManufacturedEngine("Honda", new Date()
-//            , "H-Series", "H23A1"
-//            , "2WD: Two-Wheel Drive", 4
-//            , "88 AKI");
-//    System.out.println(me2);
-//  }
+  public static void testManufacturedEngine() {
+    ManufacturedEngine me1 = new ManufacturedEngine();
+    System.out.println(me1);
+
+    ManufacturedEngine me2 =
+        new ManufacturedEngine("Honda", new Date()
+            , "H-Series", "H23A1"
+            , "2WD: Two-Wheel Drive", 4
+            , "88 AKI");
+    System.out.println(me2);
+  }
 //
 //  public static void testFeatures() {
 //    InteriorFeature if1 = new InteriorFeature();
